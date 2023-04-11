@@ -4,6 +4,9 @@
 add "**using ETLKit;**" to enable the language extension and call the ETL methods on available all data types.
 <br><br>
 
+Available on **NuGet** ([here](https://www.nuget.org/packages/TrishkaV.ETLKit/)) and installed using the command:<br>
+*dotnet add package TrishkaV.ETLKit*<br><br>
+
 **Examples:**
 
 **COLLECTIONS<br>**
