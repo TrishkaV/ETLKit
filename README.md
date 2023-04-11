@@ -17,6 +17,13 @@ add "**using ETLKit;**" to enable the language extension and call the ETL method
 ".ConvertAsCastable()" apply a data transformation formula to a Dictionary with no regards to data type (returns a dynamic object that can be casted).
 <br><br>
 
+---------------------------------------
+Collections ETL<br><br>
+<img src="https://user-images.githubusercontent.com/96583994/231188372-1f22e449-bd22-4da7-b09e-3b0f75d33dcb.png" width="650"><br><br>
+<img src="https://user-images.githubusercontent.com/96583994/231190500-48aa7aa4-ff7a-45d7-84b2-85321c9942a6.png" width="650"><br><br>
+
+---------------------------------------
+
 **TIME<br>**
 ".ToDateTime()" and ".ToDateTimeUTC()" for strings.<br>
 ".ToEpoch()" which returns a unix timestamp and ".ToIso8601()" which creates a ISO8601-compatible string for DateTime.<br>
