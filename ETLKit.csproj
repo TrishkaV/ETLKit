@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>TrishkaV.ETLKit</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>TrishkaV</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>Lightweight C# language extension for ETL operation with optimal memory allocation. Open source project at github.com/TrishkaV/ETLKit</Description>
+    <Tags>ETL</Tags>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <ProjectUrl>github.com/TrishkaV/ETLKit</ProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="docs\readme.md" Pack="true" PackagePath=""/>
+  </ItemGroup>
+
+</Project>
