@@ -24,6 +24,20 @@ public static class ExtETLKit
 {
     #region IEnumerable
     /// <summary>
+    /// Zips 2 IEnumerables with the same lenght into a Dicionary.
+    /// </summary>
+    public static Dictionary<K, V> ToDictionaryWithValues<K, V>(this IEnumerable<K> keys, IEnumerable<V> values) where K : notnull
+    {
+        if (keys.Any(key => key == null))
+            throw new ArgumentException("Keys cannot be null.");
+
+        if (keys.Count() != values.Count())
+            throw new ArgumentException($"The keys list has {keys.Count()} elements, while the values list has {values.Count()}.");
+
+        return keys.Zip(values, (key, value) => new { key, value }).ToDictionary(x => x.key, x => x.value);
+    }
+
+    /// <summary>
     /// Turn an IEnumerable of 2 values tuples into a Dictionary.
     /// </summary>
     public static Dictionary<K, V> ToDictionary<K, V>(this IEnumerable<(K, V)> input) where K : notnull => input.ToDictionary(x => x.Item1, x => x.Item2);
